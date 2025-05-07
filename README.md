@@ -1,1 +1,4 @@
-# SOEN357---UX-Mini-Project
+# Trayne
+
+For frontend: ng serve
+For Backend: mvn spring-boot:run
