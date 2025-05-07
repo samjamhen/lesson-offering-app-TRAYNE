@@ -1,0 +1,22 @@
+<div class="rounded-2xl shadow-md overflow-hidden bg-white w-full max-w-sm">
+    <!-- Image placeholder -->
+    <div class="h-40 bg-gray-300"></div>
+  
+    <!-- Event details -->
+    <div class="p-4 bg-gray-100">
+      <h3 class="text-lg font-semibold text-black">{{ event.name }}</h3>
+      <p class="text-sm text-gray-600">
+        {{ event.equipmentProvided ? 'Equipment provided' : 'Bring your own equipment' }}
+      </p>
+      <p class="text-sm text-gray-600">{{ event.location }}</p>
+      <p class="text-sm text-gray-600">
+        {{ event.eventDate | date:'fullDate' }}
+      </p>
+      <button 
+        (click)="attendEvent()" 
+        class="mt-2 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+        Attend
+      </button>
+    </div>
+  </div>
+  
